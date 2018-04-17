@@ -1,5 +1,5 @@
 # Purpose
-This is to support Spring Boot issue #xxx https://github.com/spring-projects/spring-boot/issues/xxx
+This is to support Spring Boot issue [#12879](https://github.com/spring-projects/spring-boot/issues/12879)
 
 The goal is to autowire a custom javax.validation.ConstraintValidator (PersonValidator) with a service (PersonService) to perform a validation.
 The issue is that the service is **not** autowired if call from JPA/Hibernate. It works if you call the Spring managed validator directly.
@@ -22,3 +22,5 @@ Caused by: java.lang.NullPointerException
 	... 78 more
 ```
 
+### Version
+Using Spring Boot 2.0.1 on MacOS 10.12.6 with JVM 1.8.0_162.
